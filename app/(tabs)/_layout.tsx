@@ -7,7 +7,12 @@ import { IconSymbol } from '@/components/ui/IconSymbol';
 import TabBarBackground from '@/components/ui/TabBarBackground';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
-import { LayoutDashboard, BellRing, MapPin } from 'lucide-react';
+import {
+  LayoutDashboard,
+  BellRing,
+  MapPin,
+  MessageSquareText,
+} from 'lucide-react-native';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -33,7 +38,7 @@ export default function TabLayout() {
         options={{
           title: 'Home',
           tabBarIcon: ({ color }) => (
-            <IconSymbol size={28} name="house.fill" color={color} />
+            <IconSymbol size={24} name="house.fill" color={color} />
           ),
         }}
       />
@@ -42,7 +47,7 @@ export default function TabLayout() {
         options={{
           title: 'Message',
           tabBarIcon: ({ color }) => (
-            <IconSymbol size={28} name="message.fill" color={color} />
+            <MessageSquareText size={24} color={color} />
           ),
         }}
       />
@@ -50,22 +55,22 @@ export default function TabLayout() {
         name="checkIn"
         options={{
           title: 'Check In',
-          tabBarIcon: ({ color }) => <MapPin size={28} color={color} />,
+          tabBarIcon: ({ color }) => <MapPin size={24} color={color} />,
         }}
-      />{' '}
+      />
       <Tabs.Screen
         name="notification"
         options={{
           title: 'Notification',
-          tabBarIcon: ({ color }) => <BellRing size={28} color={color} />,
+          tabBarIcon: ({ color }) => <BellRing size={24} color={color} />,
         }}
-      />{' '}
+      />
       <Tabs.Screen
         name="dashboard"
         options={{
           title: 'Dashboard',
           tabBarIcon: ({ color }) => (
-            <LayoutDashboard size={28} color={color} />
+            <LayoutDashboard size={20} color={color} />
           ),
         }}
       />
