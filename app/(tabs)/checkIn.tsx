@@ -4,7 +4,7 @@ import React from 'react';
 const CheckIn = () => {
   return (
     <View>
-      <Text>checkIn</Text>
+      <Text className=' text-red-500'>checkIn</Text>
     </View>
   );
 };

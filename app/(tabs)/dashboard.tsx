@@ -1,11 +1,13 @@
-import { View, Text } from 'react-native';
+import { Box } from '@/components/ui/box';
+import { Text } from '@/components/ui/text';
 import React from 'react';
 
 const Dashboard = () => {
   return (
-    <View>
-      <Text>dashboard</Text>
-    </View>
+    <Box className="container flex border">
+      <Text bold={true} className="text-typography-0">This is the Box</Text>
+      <Text className=' text-red-500'>this is text</Text>
+    </Box>
   );
 };
 
